@@ -122,3 +122,47 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
 }
+
+@media (max-width: 480px) {
+    /* O Header diminui de tamanho */
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    /* Esconde a logo e centraliza os ícones */
+    .logo {
+        display: none;
+    }
+
+    .area-navegação {
+        justify-content: center;
+    }
+
+    /* Ajuste das fontes: evita que fiquem gigantes */
+    .sobre-titulo, .catalogo__titulo {
+        font-size: 26px; 
+        text-align: center;
+    }
+
+    .sobre__texto {
+        font-size: 16px;
+    }
+
+    /* Empilhamento: Texto em cima e foto embaixo */
+    .area-sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Banner ocupa toda a largura do visor do iPhone */
+    #banner__image {
+        width: 100vw; /* vh/vw são unidades baseadas no tamanho da tela */
+        margin-top: 10px;
+    }
+
+    /* Ajuste da largura dos itens do catálogo */
+    .bordados > a > img {
+        width: 100%;
+    }
+}
